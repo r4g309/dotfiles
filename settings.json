@@ -1,0 +1,53 @@
+// * Error lens
+// * Python
+// * Pylance
+// * Vim
+{
+    "workbench.colorTheme": "One Dark Pro",
+    // Status bar
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": [
+        "#8FBCBB",
+        "#434C5E"
+    ],
+    "vim.statusBarColors.insert": "#BF616A",
+    "vim.statusBarColors.visual": "#B48EAD",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#B48EAD",
+        "statusBar.noFolderBackground": "#B48EAD",
+        "statusBar.debuggingBackground": "#B48EAD",
+        "statusBar.foreground": "#434C5E",
+        "statusBar.debuggingForeground": "#434C5E"
+    },
+    "vim.surround": true,
+    "vim.leader": " ",
+    "vim.handleKeys": {
+        "<C-h>": false,
+        "<C-f>": false,
+        "<C-w>": false,
+        "<C-b>": false,
+        "<C-n>": false
+    },
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.smartRelativeLine": true,
+    "vim.easymotion": true,
+    "files.autoSave": "afterDelay",
+    // Pylance
+    "python.languageServer": "Pylance",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.logLevel": "Trace",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.renderWhitespace": "all",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira code Regular','Cascadia Code Light',Consolas, 'Courier New', monospace"
+}
