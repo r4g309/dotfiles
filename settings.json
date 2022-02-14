@@ -50,5 +50,6 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.renderWhitespace": "all",
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'Fira code Regular','Cascadia Code Light',Consolas, 'Courier New', monospace"
+    "editor.fontFamily": "'Fira code Regular','Cascadia Code Light',Consolas, 'Courier New', monospace",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt"
 }
