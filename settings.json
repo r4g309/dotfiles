@@ -4,6 +4,7 @@
 // * Vim
 {
     "workbench.colorTheme": "One Dark Pro",
+    "editor.cursorBlinking": "solid",
     // Status bar
     "vim.statusBarColorControl": true,
     "vim.statusBarColors.normal": [
