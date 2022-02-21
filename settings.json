@@ -45,7 +45,7 @@
     // Pylance
     "python.languageServer": "Pylance",
     "python.analysis.autoImportCompletions": true,
-    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.typeCheckingMode": "basic",
     "python.analysis.logLevel": "Trace",
     "editor.bracketPairColorization.enabled": true,
     "editor.renderWhitespace": "all",
