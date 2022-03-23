@@ -41,6 +41,7 @@
     "vim.cursorStylePerMode.normal": "block",
     "vim.smartRelativeLine": true,
     "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
     "files.autoSave": "afterDelay",
     // Pylance
     "python.languageServer": "Pylance",
@@ -51,5 +52,6 @@
     "editor.renderWhitespace": "all",
     "editor.fontLigatures": true,
     "editor.fontFamily": "'Fira code Regular','Cascadia Code Light',Consolas, 'Courier New', monospace",
-    "terminal.integrated.defaultProfile.windows": "PowerShell"
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "prettier.tabWidth": 4,
 }
