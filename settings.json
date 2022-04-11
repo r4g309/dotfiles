@@ -3,14 +3,11 @@
 // * Pylance
 // * Vim
 {
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "One Dark Pro Darker",
     "editor.cursorBlinking": "solid",
     // Status bar
     "vim.statusBarColorControl": true,
-    "vim.statusBarColors.normal": [
-        "#8FBCBB",
-        "#434C5E"
-    ],
+    "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
     "vim.statusBarColors.insert": "#BF616A",
     "vim.statusBarColors.visual": "#B48EAD",
     "vim.statusBarColors.visualline": "#B48EAD",
@@ -45,13 +42,38 @@
     "files.autoSave": "afterDelay",
     // Pylance
     "python.languageServer": "Pylance",
+    "python.analysis.completeFunctionParens": true,
     "python.analysis.autoImportCompletions": true,
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.logLevel": "Trace",
+    "python.analysis.useLibraryCodeForTypes": true,
+    "python.analysis.autoSearchPaths": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.renderWhitespace": "all",
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'Fira code Regular','Cascadia Code Light',Consolas, 'Courier New', monospace",
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "editor.fontFamily": "'Fira code','Cascadia Code Light',Consolas, 'Courier New', monospace",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "prettier.tabWidth": 4,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.fontFamily": "'MesloLGS NF'",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "Lua.telemetry.enable": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "C_Cpp.default.includePath": ["~/ns-3-dev/build/include"],
+    "python.formatting.provider": "black",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    }
 }
+
