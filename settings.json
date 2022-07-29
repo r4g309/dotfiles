@@ -3,11 +3,13 @@
 // * Pylance
 // * Vim
 {
-    "workbench.colorTheme": "One Dark Pro Darker",
     "editor.cursorBlinking": "solid",
     // Status bar
     "vim.statusBarColorControl": true,
-    "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+    "vim.statusBarColors.normal": [
+        "#8FBCBB",
+        "#434C5E"
+    ],
     "vim.statusBarColors.insert": "#BF616A",
     "vim.statusBarColors.visual": "#B48EAD",
     "vim.statusBarColors.visualline": "#B48EAD",
@@ -26,20 +28,41 @@
         "statusBar.debuggingForeground": "#434C5E"
     },
     "vim.surround": true,
-    "vim.leader": " ",
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        }
+    ],
     "vim.handleKeys": {
         "<C-h>": false,
         "<C-f>": false,
         "<C-w>": false,
         "<C-b>": false,
-        "<C-n>": false
+        "<C-n>": false,
+        "<C-c>": false,
+        "<C-v>": false,
     },
     "vim.cursorStylePerMode.insert": "line",
     "vim.cursorStylePerMode.normal": "block",
     "vim.smartRelativeLine": true,
     "vim.easymotion": true,
     "vim.useSystemClipboard": true,
-    "files.autoSave": "afterDelay",
     // Pylance
     "python.languageServer": "Pylance",
     "python.analysis.completeFunctionParens": true,
@@ -51,29 +74,46 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.renderWhitespace": "all",
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'Fira code','Cascadia Code Light',Consolas, 'Courier New', monospace",
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "prettier.tabWidth": 4,
+    "editor.fontFamily": "'Fira code italic','Cascadia Code Light',Consolas, 'Courier New', monospace",
+    "editor.fontSize": 14,
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.fontFamily": "'MesloLGS NF'",
+    "terminal.integrated.cursorStyle": "line",
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnSave": true
     },
     "emmet.includeLanguages": {
         "django-html": "html"
     },
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
     "Lua.telemetry.enable": true,
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "C_Cpp.default.includePath": ["~/ns-3-dev/build/include"],
+    
     "python.formatting.provider": "black",
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
-    }
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.minimap.enabled": false,
+    "files.associations": {
+        "*.html": "html"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "livePreview.autoRefreshPreview": "On Changes to Saved Files",
+    "explorer.confirmDragAndDrop": false,
+    "gruvboxMaterial.italicKeywords": true,
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
 }
-
