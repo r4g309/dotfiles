@@ -29,8 +29,8 @@ startup_mode = "Windowed"
 title = "Alacritty"
 
 [window.padding]
-x = 12
-y = 10
+x = 0
+y = 0
 
 [window.dimensions]
 columns = 110
