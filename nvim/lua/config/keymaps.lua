@@ -20,3 +20,24 @@ map("n", "N", "Nzzzv", { desc = "Resultado anterior (centrado)" })
 -- prefieres tu costumbre de VSCode y navegar buffers con [b y ]b):
 -- map({ "n", "x", "o" }, "H", "^", { desc = "Inicio de línea" })
 -- map({ "n", "x", "o" }, "L", "$", { desc = "Fin de línea" })
+
+-- JSON del clipboard -> interfaz TypeScript, pegada en el cursor (usa quicktype)
+map("n", "<leader>cj", function()
+  local json = vim.fn.getreg("+")
+  if json == "" then
+    vim.notify("El clipboard está vacío", vim.log.levels.WARN)
+    return
+  end
+  vim.ui.input({ prompt = "Nombre de la interfaz: ", default = "Root" }, function(name)
+    if not name or name == "" then
+      return
+    end
+    local result = vim.fn.system({ "quicktype", "-l", "ts", "-t", name, "--just-types" }, json)
+    if vim.v.shell_error ~= 0 then
+      vim.notify("quicktype falló:\n" .. result, vim.log.levels.ERROR)
+      return
+    end
+    local lines = vim.split(result, "\n", { trimempty = true })
+    vim.api.nvim_put(lines, "l", true, true)
+  end)
+end, { desc = "JSON (clipboard) a interfaz TS (quicktype)" })
