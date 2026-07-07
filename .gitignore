@@ -1,0 +1,9 @@
+# nvim: lazy.nvim y mason se reinstalan solos al abrir nvim
+nvim/lazy-lock.json.bak
+
+# tmux: TPM clona los plugins aquí, no son tuyos para versionar
+tmux/plugins/
+
+# Basura común de editores/SO
+.DS_Store
+*.swp
