@@ -5,9 +5,6 @@ return {
     priority = 1000,
     opts = {
       contrast = "hard",
-      -- Fondo transparente: nvim usa el fondo de Alacritty (opacity + blur),
-      -- así desaparece el "marco" que se veía por el padding de la terminal.
-      transparent_mode = true,
     },
   },
   {
